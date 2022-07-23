@@ -9,7 +9,7 @@ LrdetectFile = open('language_detection_model.pckl','rb')
 Lrdetect_Model = pickle.load(LrdetectFile)
 LrdetectFile.close()
 st.title("Language Detetction Tool")
-input_test = st.text_input("Provide your text input here" , 'Hello My name is Shubham')
+input_test = st.text_input("Provide your text input here")
 
 button_clicked = st.button("Predict Language Name")
 if button_clicked:
